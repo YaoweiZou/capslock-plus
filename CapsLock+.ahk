@@ -23,7 +23,7 @@ Menu, Tray, Icon,,, 1
 
 SetStoreCapslockMode, Off
 
-global CLversion:="Version: 3.2.0.0 | 2020-10-24`n`nCopyright Junkai Chen" 
+global CLversion:="Version: 3.3.0.0 | 2022-12-14`n`nCopyright Junkai Chen"
 
 global cClipboardAll ;capslock+ clipboard
 global caClipboardAll ;capslock+alt clipboard
@@ -49,10 +49,10 @@ allowRunOnClipboardChange:=true
 ;  #include lib_scriptDemo.ahk
 ;  #include lib_fileMethods.ahk
 
-#include lib_settings.ahk ;get the settings from capslock+settings.ini 
+#include lib_settings.ahk ;get the settings from capslock+settings.ini
 #Include lib_clQ.ahk ;capslock+Q
 #Include lib_ydTrans.ahk  ;capslock+T translate
-#Include lib_clTab.ahk 
+#Include lib_clTab.ahk
 #Include lib_functions.ahk ;public functions
 #Include lib_bindWins.ahk ;capslock+` 1~8, windows bind
 #Include lib_winJump.ahk

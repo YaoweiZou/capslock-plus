@@ -56,7 +56,7 @@ keySchemeInit_capslox(){
     if(!keyset.caps_p)
         keyset.caps_p:="keyFunc_home"
     if(!keyset.caps_q)
-        keyset.caps_q:="keyFunc_qbar"
+        keyset.caps_q:="keyFunc_doNothing"
     if(!keyset.caps_r)
         keyset.caps_r:="keyFunc_delete"
     if(!keyset.caps_s)
@@ -76,84 +76,98 @@ keySchemeInit_capslox(){
     if(!keyset.caps_z)
         keyset.caps_z:="keyFunc_doNothing"
 
+    ; 反引号
     if(!keyset.caps_backquote)
         keyset.caps_backquote:="keyFunc_doNothing"
     if(!keyset.caps_1)
-        keyset.caps_1:="keyFunc_winbind_activate(1)"
+        keyset.caps_1:="keyFunc_winTransparent"
     if(!keyset.caps_2)
-        keyset.caps_2:="keyFunc_winbind_activate(2)"
+        keyset.caps_2:="keyFunc_winPin"
     if(!keyset.caps_3)
-        keyset.caps_3:="keyFunc_winbind_activate(3)"
+        keyset.caps_3:="keyFunc_switchClipboard"
     if(!keyset.caps_4)
-        keyset.caps_4:="keyFunc_winbind_activate(4)"
+        keyset.caps_4:="keyFunc_reload"
     if(!keyset.caps_5)
-        keyset.caps_5:="keyFunc_winbind_activate(5)"
+        keyset.caps_5:="keyFunc_doNothing"
     if(!keyset.caps_6)
-        keyset.caps_6:="keyFunc_winbind_activate(6)"
+        keyset.caps_6:="keyFunc_doNothing"
     if(!keyset.caps_7)
-        keyset.caps_7:="keyFunc_winbind_activate(7)"
+        keyset.caps_7:="keyFunc_doNothing"
     if(!keyset.caps_8)
-        keyset.caps_8:="keyFunc_winbind_activate(8)"
+        keyset.caps_8:="keyFunc_doNothing"
     if(!keyset.caps_9)
-        keyset.caps_9:="keyFunc_winbind_activate(9)"
+        keyset.caps_9:="keyFunc_doNothing"
     if(!keyset.caps_0)
-        keyset.caps_0:="keyFunc_winbind_activate(10)"
+        keyset.caps_0:="keyFunc_doNothing"
+    ; 减号
     if(!keyset.caps_minus)
-        keyset.caps_minus:="keyFunc_qbar_upperFolderPath"
+        keyset.caps_minus:="keyFunc_doNothing"
+    ; 等号
     if(!keyset.caps_equal)
-        keyset.caps_equal:="keyFunc_qbar_lowerFolderPath"
+        keyset.caps_equal:="keyFunc_doNothing"
     if(!keyset.caps_backspace)
         keyset.caps_backspace:="keyFunc_deleteLine"
+
     if(!keyset.caps_tab)
-        keyset.caps_tab:="keyFunc_tabScript"
+        keyset.caps_tab:="keyFunc_doNothing"
+    ; 左方括号
     if(!keyset.caps_leftSquareBracket)
         keyset.caps_leftSquareBracket:="keyFunc_deleteToLineBeginning"
+    ; 右方括号
     if(!keyset.caps_rightSquareBracket)
         keyset.caps_rightSquareBracket:="keyFunc_doNothing"
+    ; 反斜杠
     if(!keyset.caps_backslash)
         keyset.caps_backslash:="keyFunc_doNothing"
+
+    ; 分号
     if(!keyset.caps_semicolon)
         keyset.caps_semicolon:="keyFunc_end"
+    ; 引号
     if(!keyset.caps_quote)
         keyset.caps_quote:="keyFunc_doNothing"
     if(!keyset.caps_enter)
         keyset.caps_enter:="keyFunc_enterWherever"
+
+    ; 逗号
     if(!keyset.caps_comma)
         keyset.caps_comma:="keyFunc_selectCurrentWord"
     if(!keyset.caps_dot)
         keyset.caps_dot:="keyFunc_selectWordRight"
+    ; 斜杠
     if(!keyset.caps_slash)
         keyset.caps_slash:="keyFunc_deleteToLineEnd"
     if(!keyset.caps_space)
         keyset.caps_space:="keyFunc_enter"
+
     if(!keyset.caps_ralt)
         keyset.caps_ralt:="keyFunc_doNothing"
 
-    if(!keyset.caps_f1)
-        keyset.caps_f1:="keyFunc_openCpasDocs"
-    if(!keyset.caps_f2)
-        keyset.caps_f2:="keyFunc_mathBoard"
-    if(!keyset.caps_f3)
-        keyset.caps_f3:="keyFunc_translate"
-    if(!keyset.caps_f4)
-        keyset.caps_f4:="keyFunc_winTransparent"
-    if(!keyset.caps_f5)
-        keyset.caps_f5:="keyFunc_reload"
-    if(!keyset.caps_f6)
-        keyset.caps_f6:="keyFunc_winPin"
-    if(!keyset.caps_f7)
-        keyset.caps_f7:="keyFunc_doNothing"
-    if(!keyset.caps_f8)
-        keyset.caps_f8:="keyFunc_getJSEvalString"
-    if(!keyset.caps_f9)
-        keyset.caps_f9:="keyFunc_doNothing"
-    if(!keyset.caps_f10)
-        keyset.caps_f10:="keyFunc_doNothing"
-    if(!keyset.caps_f11)
-        keyset.caps_f11:="keyFunc_doNothing"
-    if(!keyset.caps_f12)
-        keyset.caps_f12:="keyFunc_switchClipboard"
-        
+    ; if(!keyset.caps_f1)
+    ;     keyset.caps_f1:="keyFunc_doNothing"
+    ; if(!keyset.caps_f2)
+    ;     keyset.caps_f2:="keyFunc_doNothing"
+    ; if(!keyset.caps_f3)
+    ;     keyset.caps_f3:="keyFunc_doNothing"
+    ; if(!keyset.caps_f4)
+    ;     keyset.caps_f4:="keyFunc_doNothing"
+    ; if(!keyset.caps_f5)
+    ;     keyset.caps_f5:="keyFunc_doNothing"
+    ; if(!keyset.caps_f6)
+    ;     keyset.caps_f6:="keyFunc_doNothing"
+    ; if(!keyset.caps_f7)
+    ;     keyset.caps_f7:="keyFunc_doNothing"
+    ; if(!keyset.caps_f8)
+    ;     keyset.caps_f8:="keyFunc_doNothing"
+    ; if(!keyset.caps_f9)
+    ;     keyset.caps_f9:="keyFunc_doNothing"
+    ; if(!keyset.caps_f10)
+    ;     keyset.caps_f10:="keyFunc_doNothing"
+    ; if(!keyset.caps_f11)
+    ;     keyset.caps_f11:="keyFunc_doNothing"
+    ; if(!keyset.caps_f12)
+    ;     keyset.caps_f12:="keyFunc_doNothing"
+
     ; LAlt--------------------------------------------
 
     if(!keyset.caps_lalt_a)
@@ -208,29 +222,29 @@ keySchemeInit_capslox(){
         keyset.caps_lalt_y:="keyFunc_selectUp(30)"
     if(!keyset.caps_lalt_z)
         keyset.caps_lalt_z:="keyFunc_doNothing"
-        
+
     if(!keyset.caps_lalt_backquote)
         keyset.caps_lalt_backquote:="keyFunc_doNothing"
-    if(!keyset.caps_lalt_1)
-        keyset.caps_lalt_1:="keyFunc_winbind_binding(1)"
-    if(!keyset.caps_lalt_2)
-        keyset.caps_lalt_2:="keyFunc_winbind_binding(2)"
-    if(!keyset.caps_lalt_3)
-        keyset.caps_lalt_3:="keyFunc_winbind_binding(3)"
-    if(!keyset.caps_lalt_4)
-        keyset.caps_lalt_4:="keyFunc_winbind_binding(4)"
-    if(!keyset.caps_lalt_5)
-        keyset.caps_lalt_5:="keyFunc_winbind_binding(5)"
-    if(!keyset.caps_lalt_6)
-        keyset.caps_lalt_6:="keyFunc_winbind_binding(6)"
-    if(!keyset.caps_lalt_7)
-        keyset.caps_lalt_7:="keyFunc_winbind_binding(7)"
-    if(!keyset.caps_lalt_8)
-        keyset.caps_lalt_8:="keyFunc_winbind_binding(8)"
-    if(!keyset.caps_lalt_9)
-        keyset.caps_lalt_9:="keyFunc_winbind_binding(9)"
-    if(!keyset.caps_lalt_0)
-        keyset.caps_lalt_0:="keyFunc_winbind_binding(10)"
+    ; if(!keyset.caps_lalt_1)
+    ;     keyset.caps_lalt_1:="keyFunc_winbind_binding(1)"
+    ; if(!keyset.caps_lalt_2)
+    ;     keyset.caps_lalt_2:="keyFunc_winbind_binding(2)"
+    ; if(!keyset.caps_lalt_3)
+    ;     keyset.caps_lalt_3:="keyFunc_winbind_binding(3)"
+    ; if(!keyset.caps_lalt_4)
+    ;     keyset.caps_lalt_4:="keyFunc_winbind_binding(4)"
+    ; if(!keyset.caps_lalt_5)
+    ;     keyset.caps_lalt_5:="keyFunc_winbind_binding(5)"
+    ; if(!keyset.caps_lalt_6)
+    ;     keyset.caps_lalt_6:="keyFunc_winbind_binding(6)"
+    ; if(!keyset.caps_lalt_7)
+    ;     keyset.caps_lalt_7:="keyFunc_winbind_binding(7)"
+    ; if(!keyset.caps_lalt_8)
+    ;     keyset.caps_lalt_8:="keyFunc_winbind_binding(8)"
+    ; if(!keyset.caps_lalt_9)
+    ;     keyset.caps_lalt_9:="keyFunc_winbind_binding(9)"
+    ; if(!keyset.caps_lalt_0)
+    ;     keyset.caps_lalt_0:="keyFunc_winbind_binding(10)"
     if(!keyset.caps_lalt_minus)
         keyset.caps_lalt_minus:="keyFunc_doNothing"
     if(!keyset.caps_lalt_equal)
@@ -261,35 +275,35 @@ keySchemeInit_capslox(){
         keyset.caps_lalt_space:="keyFunc_doNothing"
     if(!keyset.caps_lalt_ralt)
         keyset.caps_lalt_ralt:="keyFunc_doNothing"
-        
+
     ;--------------------window-------------------
-    if(!keyset.caps_win_1)
-        keyset.caps_win_1:="keyFunc_winbind_binding(1)"
-    if(!keyset.caps_win_2)
-        keyset.caps_win_2:="keyFunc_winbind_binding(2)"
-    if(!keyset.caps_win_3)
-        keyset.caps_win_3:="keyFunc_winbind_binding(3)"
-    if(!keyset.caps_win_4)
-        keyset.caps_win_4:="keyFunc_winbind_binding(4)"
-    if(!keyset.caps_win_5)
-        keyset.caps_win_5:="keyFunc_winbind_binding(5)"
-    if(!keyset.caps_win_6)
-        keyset.caps_win_6:="keyFunc_winbind_binding(6)"
-    if(!keyset.caps_win_7)
-        keyset.caps_win_7:="keyFunc_winbind_binding(7)"
-    if(!keyset.caps_win_8)
-        keyset.caps_win_8:="keyFunc_winbind_binding(8)"
-    if(!keyset.caps_win_9)
-        keyset.caps_win_9:="keyFunc_winbind_binding(9)"
-    if(!keyset.caps_win_0)
-        keyset.caps_win_0:="keyFunc_winbind_binding(10)"
-        
+    ; if(!keyset.caps_win_1)
+    ;     keyset.caps_win_1:="keyFunc_winbind_binding(1)"
+    ; if(!keyset.caps_win_2)
+    ;     keyset.caps_win_2:="keyFunc_winbind_binding(2)"
+    ; if(!keyset.caps_win_3)
+    ;     keyset.caps_win_3:="keyFunc_winbind_binding(3)"
+    ; if(!keyset.caps_win_4)
+    ;     keyset.caps_win_4:="keyFunc_winbind_binding(4)"
+    ; if(!keyset.caps_win_5)
+    ;     keyset.caps_win_5:="keyFunc_winbind_binding(5)"
+    ; if(!keyset.caps_win_6)
+    ;     keyset.caps_win_6:="keyFunc_winbind_binding(6)"
+    ; if(!keyset.caps_win_7)
+    ;     keyset.caps_win_7:="keyFunc_winbind_binding(7)"
+    ; if(!keyset.caps_win_8)
+    ;     keyset.caps_win_8:="keyFunc_winbind_binding(8)"
+    ; if(!keyset.caps_win_9)
+    ;     keyset.caps_win_9:="keyFunc_winbind_binding(9)"
+    ; if(!keyset.caps_win_0)
+    ;     keyset.caps_win_0:="keyFunc_winbind_binding(10)"
+
     ;--------------------other--------------------
-        
-    if(!keyset.caps_lalt_wheelUp)
-        keyset.caps_lalt_wheelUp:="keyFunc_mouseSpeedIncrease"
-    if(!keyset.caps_lalt_wheelDown)
-        keyset.caps_lalt_wheelDown:="keyFunc_mouseSpeedDecrease"
+
+    ; if(!keyset.caps_lalt_wheelUp)
+    ;     keyset.caps_lalt_wheelUp:="keyFunc_mouseSpeedIncrease"
+    ; if(!keyset.caps_lalt_wheelDown)
+    ;     keyset.caps_lalt_wheelDown:="keyFunc_mouseSpeedDecrease"
 
     return
 }
@@ -433,7 +447,7 @@ keySchemeInit_capslockPlus(){
         keyset.caps_f11:="keyFunc_doNothing"
     if(!keyset.caps_f12)
         keyset.caps_f12:="keyFunc_switchClipboard"
-        
+
     ; LAlt--------------------------------------------
 
     if(!keyset.caps_lalt_a)
@@ -488,7 +502,7 @@ keySchemeInit_capslockPlus(){
         keyset.caps_lalt_y:="keyFunc_pageMoveLineUp(5)"
     if(!keyset.caps_lalt_z)
         keyset.caps_lalt_z:="keyFunc_putWinToBottom"
-        
+
     if(!keyset.caps_lalt_backquote)
         keyset.caps_lalt_backquote:="keyFunc_winbind_binding(9)"
     if(!keyset.caps_lalt_1)
@@ -541,11 +555,11 @@ keySchemeInit_capslockPlus(){
         keyset.caps_lalt_space:="keyFunc_doNothing"
     if(!keyset.caps_lalt_ralt)
         keyset.caps_lalt_ralt:="keyFunc_doNothing"
-        
 
-        
+
+
     ;--------------------other--------------------
-        
+
     if(!keyset.caps_lalt_wheelUp)
         keyset.caps_lalt_wheelUp:="keyFunc_mouseSpeedIncrease"
     if(!keyset.caps_lalt_wheelDown)
